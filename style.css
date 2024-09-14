@@ -2,6 +2,7 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     margin: 0px;
     font-size: 1.5vw;
+    background-color: #a8dba8;
 }
 
 #logo {
@@ -10,10 +11,10 @@ body {
     font-family: "Fredoka One", sans-serif;
     width: 16%;
     text-shadow: 
-    1px 1px 0px black,
-    1px 1px 0px black,
-    -1px -1px 0px black,
-    -1px -1px 0px black;
+    2px 1px 0px black,
+    2px 1px 0px black,
+    -2px -1px 0px black,
+    -2px -1px 0px black;
 }
 
 ul {
@@ -21,8 +22,8 @@ ul {
 }
 
 body > header {
-    background-color: orange;
-    color: white;
+    background-color: #cff09e;
+    color: #79bd9a;
     display: flex;
     height: 12vh;
     align-items: center;
@@ -44,15 +45,19 @@ body > header > nav > ul {
 }
 
 .navbutton {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 12px;
-    border: 1px solid white;
+    border: 1px solid #79bd9a;
     border-radius: 10%;
 }
 
+.subtitle {
+    text-decoration: underline;
+}
+
 body > main article {
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 
@@ -73,13 +78,26 @@ h2 {
     text-align: center;
 }
 
-body > footer {
-    background-color: orange;
+h4 {
+    text-align: center;
+}
+
+#footer {
+    margin: 0px;
+    background-color: #3b8686;
     display: flex;
 }
 
 img {
-    border-radius: 100%;
+    border-radius: 0%;
+    width: 250px;
+    height: 150px;
+}
+
+#glasses {
+    border-radius: 30%;
+    width: 100px;
+
 }
 
 #footer-ul {
@@ -93,6 +111,121 @@ img {
 
 #footer-ul > div > li > a {
     text-decoration: none;
-    color: white;
+    color: black;
+}
+
+#authorname{
+    text-align: left;
+}
+
+#author_profile {
+    text-align: left;
+}
+
+.more {
+    text-align: left;
+}
+
+#list_ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    gap: 255px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#list_ul {
+    grid-area: list;
+}
+
+#whyvalues {
+    grid-area: value;
+    margin-right: 70px;
+}
+
+#maincontent {
+    grid-area: main;
+    display: flex;
+    gap: 10px;
+}
+
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "list list"
+    "value main"
+    ;
+    grid-template-columns: 3fr 7fr;
+}
+
+#list_ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    gap: 255px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#list_ul {
+    grid-area: list;
+}
+
+#whyvalues {
+    grid-area: value;
+    margin-right: 70px;
+}
+
+#maincontent {
+    grid-area: main;
+    display: flex;
+    gap: 10px;
+}
+
+
+#grid-container {
+    display: grid;
+    grid-template-areas: 
+    "list list"
+    "value main"
+    ;
+    grid-template-columns: 3fr 7fr;
+}
+
+
+#list_job{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    gap: 285px;
+    text-decoration: underline;
+    font-weight: bold;
+    grid-area: list2;
+}
+
+#whyjob {
+    grid-area: job;
+    margin-right: 70px;
+}
+
+#maincontent2 {
+    grid-area: main2;
+    display: flex;
+    gap: 10px;
+}
+
+
+#grid-container2 {
+    display: grid;
+    grid-template-areas: 
+    "list2 list2"
+    "job main2"
+    ;
+    grid-template-columns: 3fr 7fr;
 }
 
